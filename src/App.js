@@ -52,29 +52,31 @@ function App() {
     <div className="App">
       <div className='topbar'>
         <h1>Perfiles de Usuario</h1>
-          <div className="search-box">
-            <input
-              className="search"
-              type="text"
-              placeholder="Search..."
-              value={query}
-              onChange={handleChange} />
-            <button className='btn'>
-              <FontAwesomeIcon icon={faSearch} />
-            </button>
-          </div>
+        <div className="search-box">
+          <input
+            className="search"
+            type="text"
+            placeholder="Search..."
+            value={query}
+            onChange={handleChange} />
+          <button className='btn'>
+            <FontAwesomeIcon icon={faSearch} />
+          </button>
+        </div>
       </div>
 
       <div className='container'>
         {users &&
           users.map((user, index) => (
             <div key={user.login.uuid} id={index} className="card">
+              <div className="btn-container">
+                <div className="delete-btn">
+                  <FontAwesomeIcon icon={faXmark} onClick={() => removeUser(index)} />
+                </div>
+              </div>
               <div className="image-container">
                 <div>
                   <img src={user.picture.large} className="card-img-top" alt="..." />
-                </div>
-                <div className="delete-btn">
-                  <FontAwesomeIcon icon={faXmark} onClick={() => removeUser(index)} />
                 </div>
               </div>
               <div className="card-body">
