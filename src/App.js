@@ -14,7 +14,6 @@ function App() {
   const fetchUsers = async () => {
     await axios.get(baseURL)
       .then(response => {
-        console.log(response.data.results);
         setUsers(response.data.results);
       }).catch(error => {
         console.log(error);
@@ -31,10 +30,19 @@ function App() {
   }
 
   const search = (data) => {
-    var searchResults = users.filter((item) => {
-      if (item.name.first.toString().toLowerCase().includes(data.toLowerCase())
-        || item.name.last.toString().toLowerCase().includes(data.toLowerCase())
-        || item.location.country.toString().toLowerCase().includes(data.toLowerCase())) {
+    var searchResults = users.filter((user) => {
+      if (user.name.first
+        .toString()
+        .toLowerCase()
+        .includes(data.toLowerCase()) ||
+        user.name.last
+          .toString()
+          .toLowerCase()
+          .includes(data.toLowerCase()) ||
+        user.location.country
+          .toString()
+          .toLowerCase()
+          .includes(data.toLowerCase())) {
         return data
       }
     });
@@ -43,8 +51,6 @@ function App() {
 
   const removeUser = (id) => {
     const filteredList = users.filter((e, index) => index !== id);
-    console.log(id)
-    console.log(filteredList)
     setUsers(filteredList);
   }
 
