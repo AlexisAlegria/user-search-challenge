@@ -90,7 +90,7 @@
       font-size: 1vw;
 
       @include mobile {
-        font-size: 5vw;
+        font-size: 4vw;
       }
     }
     
@@ -99,7 +99,7 @@
       justify-content: center;
 
       .card-img-top {
-        width: 90%;
+        width: 100%;
         border-radius: 100%;
       }
 
