@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Features :white_check_mark:
+## Features :white_check_mark:
 
 The app is about searching users from a public API [https://randomuser.me/api/?results=15](https://randomuser.me/api/?results=15).
 
