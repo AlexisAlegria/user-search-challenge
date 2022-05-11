@@ -29,3 +29,5 @@ You may also see any lint errors in the console.
 ### Deployment 🔥
 
 This app was deployed here: [https://user-search-challenge.herokuapp.com/](https://user-search-challenge.herokuapp.com/)
+
+Please check it out in a mobile device! :eyes:
