@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Features :white_check_mark:
+
+The app is about searching users from a public API [https://randomuser.me/api/?results=15](https://randomuser.me/api/?results=15).
+
+Each user was shown on screen by Cards, and each one contains relevant information about the user e.g First Name, Last Name, Email, Cell Number, City and Country
+
+You can search users based on three criterias:
+
+- First Name
+- Last Name
+- Country
+
 ## Available Scripts :computer:
 
 In the project directory, you can run:
