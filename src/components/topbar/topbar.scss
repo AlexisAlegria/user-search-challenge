@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+.topbar {
+    width: 98%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+
+    h1{
+      color: #4D94FF;
+    }
+    .search {
+      padding: 5px 7px;
+    }
+    .btn {
+      padding: 5px;
+    }
+
+  }
